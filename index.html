@@ -22,15 +22,11 @@
                 <h3>Your Shopping Cart</h3>
                 <label id="listItems"></label>
                 Coca Cola
-                <div class="quantity-controls" >
-                    <button class="decrease" onclick="changeQuantity('Product 1', -1)">-</button>
-                    <span class="quantity">1</span>
-                    <button class="increase" onclick="changeQuantity('Product 1', 1)">+</button>
-                </div>
+                <input type="number" class="quantity-input" min="1" value="1" placeholder="Qty">
+                <button id="edit-quantity" onclick="edit-quantity()">Edit</button>
                 
                 <button id="checkoutButton" onclick="checkout()">Checkout</button>
             </div>
-            
         </div>
     </header>
 
