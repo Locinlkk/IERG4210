@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pi Shop</h1>
+        <nav>
+            <ul>
+                <li><button class="nav-button" onclick="loadIframe('product-list.html')">Home</button></li>
+                <li><button class="nav-button" onclick="loadIframe('food-product-list.html')">Food</button></li>
+                <li><button class="nav-button" onclick="loadIframe('drink-product-list.html')">Drink</button></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <img src="shop-cart.png" alt="Cart" class="cart-logo">
+            <div class="shopping-list" id="shoppingList">
+                <h3>Your Shopping Cart</h3>
+                <label id="listItems"></label>
+                Coca Cola
+                <div class="quantity-controls" >
+                    <button class="decrease" onclick="changeQuantity('Product 1', -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button class="increase" onclick="changeQuantity('Product 1', 1)">+</button>
+                </div>
+                
+                <button id="checkoutButton" onclick="checkout()">Checkout</button>
+            </div>
+            
+        </div>
+    </header>
+
+
+    <main id="content">
+        <section class="container">
+            <iframe id="product-iframe" src="product-list.html"></iframe>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Pi Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

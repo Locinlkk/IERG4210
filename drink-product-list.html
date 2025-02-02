@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pi Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <main id="content">
+        <section class="container">
+            <h2><a href="product-list.html">Home</a> > <a href="drink-product-list.html">Drink</a></h2>
+            <section class="product-list">
+                <div class="products">
+                    <div class="product">
+                        <a href="drink/product1.html"><img src="drink/image/product1.jpg" alt="Product 1"></a>
+                        <h3>Coca Cola</h3>
+                        <p>$10.00</p>
+                        <input type="number" class="quantity-input" min="0" value="0" placeholder="Qty">
+                        <button class="addbutton" onclick="addToCart('Lay\'s Sour Cream & Onion Flavor')">Add</button>
+                        <div class="quantity-controls" >
+                            <button class="decrease" onclick="changeQuantity('Product 1', -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase" onclick="changeQuantity('Product 1', 1)">+</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <a href="drink/product2.html"><img src="drink/image/product2.jpg" alt="Product 2"></a>
+                        <h3>Orange Juice</h3>
+                        <p>$10.00</p>
+                        <input type="number" class="quantity-input" min="0" value="0" placeholder="Qty">
+                        <button class="addbutton" onclick="addToCart('Lay\'s Sour Cream & Onion Flavor')">Add</button>
+                        <div class="quantity-controls" >
+                            <button class="decrease" onclick="changeQuantity('Product 1', -1)">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase" onclick="changeQuantity('Product 1', 1)">+</button>
+                        </div>
+                    </div>
+                    <!-- Repeat for more products -->
+                </div>
+            </section>
+        
+        
+   
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
